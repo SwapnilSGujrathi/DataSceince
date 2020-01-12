@@ -12,3 +12,8 @@ plot(airquality$Ozone, xlab='ozone concentration', ylab='no of instances', main=
 barplot(airquality$Ozone, xlab='ozone concentration', ylab='no of instances', main='ozone levels in Ny city', col='green', type= "h",horiz = TRUE)
 barplot(airquality$Ozone, xlab='ozone concentration', ylab='no of instances', main='ozone levels in Ny city', col='yellow', type= "h")
 hist(airquality$Solar.R)
+hist(airquality$Solar.R, main='solar Radiation Values in Air', xlab= 'solar rad.', col='Red')
+boxplot(airquality)
+boxplot(airquality$Wind)
+boxplot(airquality[,1:4], main= 'multiple box plots')
+par(mfrow=c(3,3), mar=c(2,5,2,1), las=1, bty= "n")
